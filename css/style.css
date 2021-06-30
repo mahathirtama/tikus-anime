@@ -1,0 +1,66 @@
+body {
+  background-color: pink;
+}
+
+h1,
+h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  cursor: url(../img/kisjadi.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/kissjadi2.png), auto;
+}
+
+.mulai {
+  width: 200px;
+  font-size: 30px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.awan {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.awan::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/bisaawan.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  bottom: -25px;
+}
+
+.yukinon {
+  width: 100%;
+  height: 100%;
+  background: url(../img/yukinonbisa.png) bottom center no-repeat;
+  background-size: 80%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+}
+
+.awan.muncul .yukinon {
+  top: 20px;
+}
